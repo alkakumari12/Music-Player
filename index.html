@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <title>Music-Player- All your songs here</title>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li class="logo" src="" alt="logo" >Music-Player</li>
+            <li>Home</li>
+            <li>About</li>
+
+        </ul>
+
+    </nav>
+
+    <div class="container">
+        <h1>Favrouite songs</h1>
+
+        <div class="my-3" id="favSongs">
+            <i class="fa-duotone fa-3x fa-angle-right" id="scrollRight"></i>
+        </div>
+
+        <h1>Sad songs</h1>
+        <div class="my-3" id="sadSongs">
+
+        </div>
+
+        <h1>Party songs</h1>
+        <div class="my-3" id="partySongs">
+
+        </div>
+
+    </div>
+ 
+    <div class="bottom">
+        <input type="range" name="range" id="myProgressBar" min="0" value="0" max="100">
+        <div class="play">
+            <div class="icons">
+                <i class="fa-solid fa-1x fa-step-backward" id="previous"></i>
+                <i class="fa-solid fa-2x fa-circle-play" id ="masterPlay"></i>
+                <i class="fa-solid fa-1x fa-step-forward" id="next"></i>
+            </div>
+                
+            <div class="songInfo">
+                <img class="mx-2" id ="songInfoCover" src="./covers/3.jpg" alt=".." style="height: 50px; width: 40px; border-radius: 5px;">
+                <div class="songInfoTitle">
+                    <h6 id="songInfoMainTitle"> You are going </h6>
+                    <p id="songInfoMainSinger" style="color: grey"> Absiemon</p>
+                </div>
+            </div>
+
+        </div>
+
+        
+    </div>
+
+    <script src="https://kit.fontawesome.com/468fbf2881.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&family=Varela+Round&display=swap');
+
+body{
+    background-color:black;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    color: white;
+}
+
+nav{
+    font-family: 'Ubuntu', 'sans serif ';
+}
+
+nav ul{
+    display:flex;
+    list-style-type: none;
+    height: 60px; 
+    background-color: #21252D;
+    align-items: center;
+
+}
+nav ul li{
+    padding:0 12px;
+    cursor: pointer;
+}
+.logo{
+    font-size: 1.5rem;
+}
+
+.container{
+    min-height: 85vh;
+    font-family: 'Varela Round' 'sans-serif';
+    display: flex;
+    flex-direction: column;
+    margin: 23px auto;
+    width: 100%;
+    padding: 34px;
+    /* background-image: url("bg.jpg"); */
+    background-color: #21252D;
+   border-radius: 1rem;
+}
+
+#favSongs, #sadSongs, #partySongs{
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    overflow-y: hidden;
+    height: 45vh;
+    gap: 2rem;
+    /* justify-content: space-between; */
+
+}
+#favSongs::-webkit-scrollbar {
+
+    width: 20px;
+} 
+#sadSongs::-webkit-scrollbar {
+
+    width: 20px;
+} 
+#partySongs::-webkit-scrollbar {
+
+    width: 20px;
+} 
+.songItemPlay{
+    position:absolute;
+
+}
+
+#scrollRight{
+    position: absolute;
+    top: 0;
+}
+.bottom{
+    height: 85px;
+    background-color:black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column-reverse;
+    width: 86%;
+    position: absolute;
+    top: 87vh;
+    left: 8%;
+    border-radius: 0.4rem;
+    position: fixed;
+
+}
+.play{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    flex-direction: row-reverse;
+
+}
+
+#myProgressBar{
+    width: 80vw;
+    cursor: pointer;
+    position: absolute;
+    bottom: 0;
+}
+.icons{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+    margin-top: 8px;
+}
+.icons i{
+    cursor: pointer;
+}
+
+.songInfo{
+    display: flex;
+    margin-top: 7px;
+    position: absolute;
+    left: 0;
+}
+.songInfoTitle{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
